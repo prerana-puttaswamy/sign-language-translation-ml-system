@@ -14,16 +14,16 @@ This work is based on a **published research paper** in IARJSET.
 
 ## Key Features
 
-* 🔁 Two-way translation:
+* Two-way translation:
 
   * Sign Language → Text
   * Text → Sign Language
   * Speech → Text
   * Text → Speech
-* 🎯 Real-time gesture recognition using computer vision
-* 🧠 Deep learning-based prediction using CNN + LSTM
-* 🎤 Audio processing with speech-to-text and text-to-speech
-* 🌐 User-friendly web interface for accessibility
+* Real-time gesture recognition using computer vision
+* Deep learning-based prediction using CNN + LSTM
+* Audio processing with speech-to-text and text-to-speech
+* User-friendly web interface for accessibility
 
 ## System Architecture
 
@@ -65,10 +65,6 @@ The system is composed of multiple modules:
 * Achieved high accuracy in gesture recognition tasks
 * Successfully demonstrated real-time translation between modalities
 * Improved communication accessibility for users in testing scenarios
-
-## Demo / Screenshots
-
-(Add your screenshots here)
 
 ## Future Improvements
 
