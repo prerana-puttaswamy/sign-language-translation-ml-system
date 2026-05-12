@@ -80,5 +80,12 @@ Training involved separating non-overlapping train/test splits to prevent overfi
 ## Publication
 
 This work was peer-reviewed and published in **IARJSET** — indexed by Google Scholar, Mendeley, Crossref, Scilit, and UGC approved (2017).
+---
 
-**Cite this work:**
+## Authors
+
+- **Prerana P** — Student, Computer Science, GSSSIETW, Mysuru
+- Priyaanca J — Student, Computer Science, GSSSIETW, Mysuru
+- Puneetha M Deshmuk — Student, Computer Science, GSSSIETW, Mysuru
+- Nithyashree M — Student, Computer Science, GSSSIETW, Mysuru
+- Divyashree M — Assistant Professor, Computer Science, GSSSIETW, Mysuru
