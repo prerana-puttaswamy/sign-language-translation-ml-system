@@ -1,77 +1,84 @@
-# Two-Way Sign Language Translation System
+# Communication Made Possible: A Comprehensive Web Application for Two-Way Sign Language Conversion
 
-## Overview
+> Published in IARJSET (International Advanced Research Journal in Science, Engineering and Technology)  
+> Volume 11, Issue 4, April 2024  
+> Authors:Prerana P, Priyaanca J, Puneetha M Deshmuk, Nithyashree M, Divyashree M
 
-This project presents a real-time, two-way sign language communication system designed to bridge the gap between sign language users and non-signers. The system leverages machine learning, computer vision, and speech processing to enable seamless translation between gestures, text, and audio.
+---
 
-This work is based on a **published research paper** in IARJSET.
+## About
 
-## Publication
+This project presents a **Two-Way Sign Language Converter Web Application (TWSLCW)** — a real-time, bidirectional communication system that bridges the gap between sign language users and non-signers.
 
-* **Journal:** International Advanced Research Journal in Science, Engineering and Technology (IARJSET)
-* **DOI:** 10.17148/IARJSET.2024.11xx
-* **Title:** Communication Made Possible: A Comprehensive Web Application for Two-Way Sign Language Conversion
+Traditional communication tools for the deaf and hard-of-hearing community rely on human interpreters or pre-written data, which are slow, expensive, and often inaccurate. This system addresses that by using state-of-the-art machine learning to enable instant, automated translation in both directions.
 
-## Key Features
+---
 
-* Two-way translation:
+## How It Works
 
-  * Sign Language → Text
-  * Text → Sign Language
-  * Speech → Text
-  * Text → Speech
-* Real-time gesture recognition using computer vision
-* Deep learning-based prediction using CNN + LSTM
-* Audio processing with speech-to-text and text-to-speech
-* User-friendly web interface for accessibility
+The application supports two-way conversion:
 
-## System Architecture
+**Sign Language → Text**
+- Webcam captures hand gestures in real time
+- Video frames are converted to images and processed
+- A CNN model trained on sign language datasets classifies the gesture
+- Output is displayed as text or converted to speech
 
-The system is composed of multiple modules:
+**Text / Audio → Sign Language**
+- User types text or speaks via microphone
+- Speech is converted to text using ASR (Automatic Speech Recognition)
+- Text is tokenized and mapped to corresponding sign language gestures
+- Animated gesture output is displayed on screen
 
-### 1. Gesture Recognition Module
+---
 
-* Uses CNN-based models to detect and classify hand gestures
-* Extracts spatial and temporal features from video input
+## Architecture
 
-### 2. Text-to-Sign Module
+The system is built around three core deep learning components:
 
-* Converts input text into sign representations
-* Uses sequence modeling techniques (RNN/LSTM)
+- **3D-CNN** — extracts spatiotemporal features from video gesture sequences
+- **LSTM** — models temporal relationships across gesture frames
+- **SoftMax classifier** — outputs gesture class probabilities
 
-### 3. Speech Processing Module
+---
 
-* Converts speech to text using ASR
-* Converts text to speech using TTS
+## Features
 
-### 4. Integration Layer
+- Real-time gesture recognition via webcam
+- Audio input via microphone with speech-to-text conversion
+- Animated sign language output for text/audio inputs
+- User authentication (Sign Up / Login)
+- Clean, accessible web interface
+- Support for both individual alphabets and common words
 
-* Connects all modules into a unified web-based application
-
-## Tech Stack
-
-* **Languages:** Python, JavaScript
-* **ML/DL:** CNN, RNN, LSTM
-* **Libraries:** OpenCV, TensorFlow / PyTorch
-* **Concepts:** Computer Vision, NLP, Speech Processing
+---
 
 ## Dataset
 
-* Custom dataset of sign language gestures (alphabets + words)
-* Preprocessed using image normalization and feature extraction techniques
+Two datasets were used for training:
 
-## Results
+- **Alphabet dataset** — labeled hand gesture images for A–Z
+- **Word dataset** — gesture clips for common words including: Baby, Brother, Friend, Help, House, Like, Love, Make, and more
 
-* Achieved high accuracy in gesture recognition tasks
-* Successfully demonstrated real-time translation between modalities
-* Improved communication accessibility for users in testing scenarios
+Training involved separating non-overlapping train/test splits to prevent overfitting, with diverse gesture samples across multiple classes.
 
-## Future Improvements
+---
 
-* Expand dataset for more languages and gestures
-* Improve model accuracy with transformer-based architectures
-* Deploy as a scalable cloud-based service
+## Tech Stack
 
-## Author
+| Layer | Technology |
+|---|---|
+| Machine Learning | CNN, RNN (LSTM), SoftMax |
+| Computer Vision | OpenCV, MediaPipe |
+| Speech Recognition | ASR (Web Speech API) |
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Python |
+| Deep Learning Framework | PyTorch |
 
-Prerana Puttaswamy
+---
+
+## Publication
+
+This work was peer-reviewed and published in **IARJSET** — indexed by Google Scholar, Mendeley, Crossref, Scilit, and UGC approved (2017).
+
+**Cite this work:**
